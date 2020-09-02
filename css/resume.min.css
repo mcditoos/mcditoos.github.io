@@ -27,7 +27,6 @@
  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link{display:block}}
  section.resume-section{padding-top:5rem!important;padding-bottom:5rem!important;max-width:75rem}
  section.resume-section .resume-item .resume-date{min-width:none}
- @media (min-width:768px){section.resume-section{min-height:100vh}
  section.resume-section .resume-item .resume-date{min-width:18rem}}
  @media (min-width:992px){section.resume-section{padding-top:3rem!important;padding-bottom:3rem!important}}
  .bg-primary{background-color:#A9A9A9!important}.text-primary{color:#87CEFA!important}a{color:#87CEFA}a:active,a:focus,a:hover{color:#824027}
