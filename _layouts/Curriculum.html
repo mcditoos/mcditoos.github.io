@@ -1,0 +1,88 @@
+---
+layout: default
+---
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% endif %}
+
+{% if page.url != "/" and site.breadcrumbs %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
+<link rel="stylesheet" href="../assets/css/timeline.css">
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <div class="archive">
+    {% unless page.header.overlay_color or page.header.overlay_image %}
+      <h1 class="page__title" style="font-size:56px;text-align:center;color:blue;">{{ page.title }}</h1>
+    {% endunless %}
+
+    <div class="col-md-7">
+         <h1>Education</h1>
+         <ul class="ul-edu fa-ul">
+
+
+           <li>
+             <i class="fa-li fas fa-graduation-cap"></i>
+             <div class="description">
+               <p class="course" style="font-weight:bold; margin: 0;padding: 0;">M.Sc. in Physics, 2018-2020</p>
+               <p style=" margin: 0;padding: 0;">Centro de Investigación y de Estudios Avanzados del I.P.N.</p>
+             </div>
+           </li>
+
+           <li>
+             <i class="fa-li fas fa-microchip"></i>
+             <div class="description">
+               <p class="course" style="font-weight:bold; margin: 0;padding: 0;">B.Sc. in Electronics Engineering with minor in Telecommunications, 2014-2017</p>
+               <p class="institution" style="margin: 0;padding: 0;">Universidad Privada Dr. Rafael Belloso Chacin (URBE)</p>
+             </div>
+           </li>
+
+         </ul>
+       </div>
+
+       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+       <main>
+           <div class="container">
+               <h1 class="card-title">Experience</h1>
+               <div class="row">
+                   <div class="col-md-12">
+                       <div class="main-timeline3">
+                           <div class="timeline">
+                               <div class="timeline-icon"><span class="year">2018</span></div>
+                               <div class="timeline-content">
+                                   <h3 class="title">IT Engineer, TIVENCA</h3>
+                                   <p class="description">
+
+                                     I was part of the IT department at TIVENCA where I performed task like adding users and mails to the company's private network,
+troubleshooting the Company's Network by fixing issues on ISA SERVERS or Cisco Routers/Switches and
+updating and managing Software Licences. I was there from september 2017 to february 2018
+
+                                   </p>
+                               </div>
+                           </div>
+                           <div class="timeline">
+                               <div class="timeline-icon"><span class="year">2017</span></div>
+                               <div class="timeline-content">
+                                   <h3 class="title">Research Intern, CIDA</h3>
+                                   <p class="description">
+I Analized images from the Simon Bolivar satellite of the Valles del Tuy region, I used those images to study the topology and soil humidity of the region among other aspects, I used QGIS, python and some legacy C++ scripts. I did this during the summer of 2017.
+                                   </p>
+                               </div>
+                           </div>
+
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </main>
+
+
+
+    {{ content }}
+  </div>
+</div>
